@@ -1,8 +1,8 @@
-import React from "react";
-import "./style.css";
-import { detailing } from "../../../redux/todoSlice";
-import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import React from 'react'
+import './style.css'
+import { detailing } from '../../../redux/todoSlice'
+import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 
 import {
   incrementCart,
@@ -11,14 +11,14 @@ import {
   handleincrese1,
   handleproduct2,
   handleremove2,
-} from "../../../redux/todoSlice";
+} from '../../../redux/todoSlice'
 
 export default function CartCard(props) {
-  const token = localStorage.getItem("token");
-  const count = useSelector((store) => store.counter);
-  const { ident } = props;
-  let navigate = useNavigate();
-  const dispatch = useDispatch();
+  const token = localStorage.getItem('token')
+  const count = useSelector((store) => store.counter)
+  const { ident } = props
+  let navigate = useNavigate()
+  const dispatch = useDispatch()
   return (
     <div className="Cart-Container">
       <img
@@ -26,15 +26,15 @@ export default function CartCard(props) {
         alt=""
         className="Cart-img"
         onClick={() => {
-          navigate("/detail");
-          dispatch(detailing(ident));
+          navigate('/detail')
+          dispatch(detailing(ident))
         }}
       />
       <span
         className="Cart-Name"
         onClick={() => {
-          navigate("/detail");
-          dispatch(detailing(ident));
+          navigate('/detail')
+          dispatch(detailing(ident))
         }}
       >
         {count.listOfAllObject.find((item) => item.id === ident).name}
@@ -42,7 +42,7 @@ export default function CartCard(props) {
       <span
         className="Signin-bonus"
         onClick={() => {
-          navigate("/login");
+          navigate('/login')
         }}
       >
         Get Extra 5% OFF! Signin First
@@ -83,9 +83,9 @@ export default function CartCard(props) {
               count.listOfAllObject.find((item) => item.id === count.productID)
                 .quantity > 0
             ) {
-              dispatch(decrementCart());
-              dispatch(handledecrese1(count.productID));
-              dispatch(handleremove2(count.product));
+              dispatch(decrementCart())
+              dispatch(handledecrese1(count.productID))
+              dispatch(handleremove2(count.product))
             }
           }}
         >
@@ -100,14 +100,14 @@ export default function CartCard(props) {
         <p
           className="item-add-button"
           onClick={() => {
-            dispatch(incrementCart());
-            dispatch(handleincrese1(count.productID));
-            dispatch(handleproduct2(count.product));
+            dispatch(incrementCart())
+            dispatch(handleincrese1(count.productID))
+            dispatch(handleproduct2(count.product))
           }}
         >
           +
         </p>
       </span>
     </div>
-  );
+  )
 }
