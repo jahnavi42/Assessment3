@@ -1,0 +1,7 @@
+.CartScreen-Containers{
+    display: flex;
+    flex-direction: column;
+    width: 26vw;
+    height: 70vh;
+    margin: auto;
+    }

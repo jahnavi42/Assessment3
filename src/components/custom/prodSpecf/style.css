@@ -1,0 +1,120 @@
+.ProdSpecf-Container{
+    display: flex;
+    flex-direction: row;
+    width: 96vw;
+    gap: 2.5vw;
+    padding: 1vw;
+    margin: auto;
+    }
+    .ProdSpecf-Detail-Con{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap:2.5vh
+    }
+    .prodSpecf-img-Cont{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .img-Cont1{
+        width: 5vw;
+        height: 8vh;
+        border: 0.1vh solid gray;
+    }
+    .ProdSpecf-img{
+        height: 50vh;
+        width: 35vw;
+        border: 0.1vh solid gray;
+    }
+    
+    .prod-list{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        width: 30vw;
+        
+    }
+    .prod-addCart{
+        width: 15vw;
+        height: 8vh;
+        border: 0.1vw solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #4681f4;
+        border-radius: 2vw;
+        
+    }
+    .prod-quantity{
+        display: flex;
+        flex-direction: column;
+        gap:2vh;
+        border: 0.1vw solid gray;
+        padding: 1vw;
+        width: 20vw;
+        height: 50vh;
+    }
+    .Prod-Discount{
+      position: absolute;
+      top: 11vh;
+      left: 10vw;
+      background-color: rgb(245, 179, 179);
+      border: 0.1vh solid gray;
+      border-radius: 50%;
+      font-size: 2.5vh;
+      font-weight: 500;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 4vw;
+      height: 8vh;
+    }
+    .item-in-cart {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border: 0.1vh solid gray;
+      gap: 1vw;
+    }
+    
+    .item-remove-button {
+      width: 2.5vw;
+      border: 0.1vh solid gray;
+      height: 4vh;
+      text-align: center;
+      font-size: 3vh;
+    }
+    
+    .item-quantity {
+      width: 2.5vw;
+      border: 0.1vh solid gray;
+      height: 4vh;
+      text-align: center;
+      font-size: 3vh;
+    }
+    
+    .item-add-button {
+      width: 2.5vw;
+      border: 0.1vh solid gray;
+      height: 4vh;
+      text-align: center;
+      font-size: 3vh;
+    }
+    
+    .Prod-Buy-Button{
+      border: 0.1vw solid gray;
+      height: 8vh;
+        background-color: #4681f4;
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
