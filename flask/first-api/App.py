@@ -10,12 +10,8 @@ api = Api(app)
 CORS(app)
 
 jwt = JWTManager(app)
-
-
 users = []
 orders=[]
-
-
 class Item():
     def __init__(self, username,itemname, itemdesc) -> None:
         self.username=username
